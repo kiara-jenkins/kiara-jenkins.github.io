@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Sandrine</title>
+
+  <link rel="stylesheet" href="../mtk.css"  />
+</head>
+<body>
+
+<header class="post-header">
+	<h1 class="post-title">Happy Birthday Sandrine</h1>
+	<p class="lead">SSV/King's Singers</p>
+</header>
+
+<div class="post-content" id="soft_zone"></div>
+<div style="margin-left: 2%">
+<pre >
+Happy birthday to you,
+Happy birthday to you,
+Happy birthday <b>dear Sandrine</b>,
+Happy birthday to you, to you, to you
+</pre>
+support visuel : <a href="kings_score.png">partition</a>, <a href="piano_roll.png">piano-roll</a><br>&nbsp;
+</div>
+<script>
+var playlist_params = {
+	zoomLevels: [500, 1000, 2000, 4000],	// en avoir plus d'un n'a de sens que si on a les boutons
+	samplesPerPixel: 2000,			// initial zoom, une des valeurs de zoomLevels[]
+	};
+
+var playlist_tracklist = [
+	{
+	src: "./kings_soprano.mp3",
+	name: "SOPRANO",
+	gain: 0.35,		// c'est pas volume, c'est gain !!!
+	stereoPan: -0.7,	// de -1 a +1
+	},
+	{
+	src: "./kings_mezzo.mp3",
+	name: "MEZZO",
+	gain: 0.35,
+	stereoPan: -0.5,	// de -1 a +1
+	},
+	{
+	src: "./kings_alto.mp3",
+	name: "ALTO",
+	gain: 0.35,
+	stereoPan: -0.2,	// de -1 a +1
+	},
+	{
+	src: "./kings_tenor.mp3",
+	name: "TENOR",
+	gain: 0.35,
+	stereoPan: 0.2,	// de -1 a +1
+	},
+	{
+	src: "./kings_baryton.mp3",
+	name: "BARYTON",
+	gain: 0.33,
+	stereoPan: 0.5,	// de -1 a +1
+	},
+	{
+	src: "./kings_bass.mp3",
+	name: "BASS",
+	gain: 0.32,
+	stereoPan: 0.7,	// de -1 a +1
+	},
+	{
+	src: "./kings_VO.mp3",
+	name: "V.O.",
+	gain: 0.12,
+	}
+	];
+</script>
+
+<script type="text/javascript" src="../mtk.js?v=5.0.0"></script>
+
+</body>
+</html>
